@@ -13,13 +13,23 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            TextField("Regex", text: $viewModel.regex)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding([.top, .horizontal])
             HStack {
-                TextField("path...", text: $viewModel.currentPath)
+                TextField("Path...", text: $viewModel.currentPath)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button {
                     viewModel.selectDirectory()
                 } label: {
                     Text("Open In...")
+                }
+            }
+            .padding(.horizontal)
+            List(viewModel.visibleItemList, id: \.self) { item in
+                VStack(alignment: .leading) {
+                    Text(item)
+                    Divider()
                 }
             }
             Text(viewModel.xml.render())

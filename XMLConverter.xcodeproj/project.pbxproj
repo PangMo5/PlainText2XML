@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62356097268EF36C00F1667E /* URL++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62356096268EF36C00F1667E /* URL++.swift */; };
 		624F5D2E268EDC9200352283 /* XMLConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F5D2D268EDC9200352283 /* XMLConverterApp.swift */; };
 		624F5D30268EDC9200352283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F5D2F268EDC9200352283 /* ContentView.swift */; };
 		624F5D32268EDC9400352283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624F5D31268EDC9400352283 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62356096268EF36C00F1667E /* URL++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL++.swift"; sourceTree = "<group>"; };
 		624F5D2A268EDC9200352283 /* XMLConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F5D2D268EDC9200352283 /* XMLConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLConverterApp.swift; sourceTree = "<group>"; };
 		624F5D2F268EDC9200352283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62356095268EF36000F1667E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62356096268EF36C00F1667E /* URL++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		624F5D21268EDC9200352283 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		624F5D2C268EDC9200352283 /* XMLConverter */ = {
 			isa = PBXGroup;
 			children = (
+				62356095268EF36000F1667E /* Extensions */,
 				624F5D3E268EDCC700352283 /* ViewModels */,
 				624F5D3D268EDCBC00352283 /* Views */,
 				624F5D2D268EDC9200352283 /* XMLConverterApp.swift */,
@@ -170,6 +181,7 @@
 				624F5D30268EDC9200352283 /* ContentView.swift in Sources */,
 				624F5D2E268EDC9200352283 /* XMLConverterApp.swift in Sources */,
 				624F5D40268EDCD100352283 /* ContentViewModel.swift in Sources */,
+				62356097268EF36C00F1667E /* URL++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
