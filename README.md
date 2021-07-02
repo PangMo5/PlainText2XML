@@ -1,4 +1,4 @@
-# XMLConverter
+# PlainText2XML
 Plain text to XML converter
 
 ## Description
