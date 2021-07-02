@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		62356097268EF36C00F1667E /* URL++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62356096268EF36C00F1667E /* URL++.swift */; };
+		623560AA268F17F300F1667E /* AEXML in Frameworks */ = {isa = PBXBuildFile; productRef = 623560A9268F17F300F1667E /* AEXML */; };
+		623560AD268F1D5200F1667E /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 623560AC268F1D5200F1667E /* Defaults */; };
+		623560AF268F1D7100F1667E /* Defaults++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623560AE268F1D7100F1667E /* Defaults++.swift */; };
 		624F5D2E268EDC9200352283 /* XMLConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F5D2D268EDC9200352283 /* XMLConverterApp.swift */; };
 		624F5D30268EDC9200352283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F5D2F268EDC9200352283 /* ContentView.swift */; };
 		624F5D32268EDC9400352283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624F5D31268EDC9400352283 /* Assets.xcassets */; };
 		624F5D35268EDC9400352283 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624F5D34268EDC9400352283 /* Preview Assets.xcassets */; };
 		624F5D40268EDCD100352283 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F5D3F268EDCD100352283 /* ContentViewModel.swift */; };
-		624F5D43268EDD0800352283 /* Plot in Frameworks */ = {isa = PBXBuildFile; productRef = 624F5D42268EDD0800352283 /* Plot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62356096268EF36C00F1667E /* URL++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL++.swift"; sourceTree = "<group>"; };
+		623560AE268F1D7100F1667E /* Defaults++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Defaults++.swift"; sourceTree = "<group>"; };
 		624F5D2A268EDC9200352283 /* XMLConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F5D2D268EDC9200352283 /* XMLConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLConverterApp.swift; sourceTree = "<group>"; };
 		624F5D2F268EDC9200352283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624F5D43268EDD0800352283 /* Plot in Frameworks */,
+				623560AD268F1D5200F1667E /* Defaults in Frameworks */,
+				623560AA268F17F300F1667E /* AEXML in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				62356096268EF36C00F1667E /* URL++.swift */,
+				623560AE268F1D7100F1667E /* Defaults++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,7 +125,8 @@
 			);
 			name = XMLConverter;
 			packageProductDependencies = (
-				624F5D42268EDD0800352283 /* Plot */,
+				623560A9268F17F300F1667E /* AEXML */,
+				623560AC268F1D5200F1667E /* Defaults */,
 			);
 			productName = XMLConverter;
 			productReference = 624F5D2A268EDC9200352283 /* XMLConverter.app */;
@@ -150,7 +156,8 @@
 			);
 			mainGroup = 624F5D21268EDC9200352283;
 			packageReferences = (
-				624F5D41268EDD0800352283 /* XCRemoteSwiftPackageReference "Plot" */,
+				623560A8268F17F300F1667E /* XCRemoteSwiftPackageReference "AEXML" */,
+				623560AB268F1D5200F1667E /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = 624F5D2B268EDC9200352283 /* Products */;
 			projectDirPath = "";
@@ -181,6 +188,7 @@
 				624F5D30268EDC9200352283 /* ContentView.swift in Sources */,
 				624F5D2E268EDC9200352283 /* XMLConverterApp.swift in Sources */,
 				624F5D40268EDCD100352283 /* ContentViewModel.swift in Sources */,
+				623560AF268F1D7100F1667E /* Defaults++.swift in Sources */,
 				62356097268EF36C00F1667E /* URL++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,21 +383,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		624F5D41268EDD0800352283 /* XCRemoteSwiftPackageReference "Plot" */ = {
+		623560A8268F17F300F1667E /* XCRemoteSwiftPackageReference "AEXML" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/Plot";
+			repositoryURL = "https://github.com/tadija/AEXML";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.10.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+		623560AB268F1D5200F1667E /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		624F5D42268EDD0800352283 /* Plot */ = {
+		623560A9268F17F300F1667E /* AEXML */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 624F5D41268EDD0800352283 /* XCRemoteSwiftPackageReference "Plot" */;
-			productName = Plot;
+			package = 623560A8268F17F300F1667E /* XCRemoteSwiftPackageReference "AEXML" */;
+			productName = AEXML;
+		};
+		623560AC268F1D5200F1667E /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 623560AB268F1D5200F1667E /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
